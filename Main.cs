@@ -24,11 +24,11 @@ namespace QB_queue
         try
         {
           // ISSUE: variable of a compiler-generated type
-          QBSessionManager instance = (QBSessionManager) Activator.CreateInstance(Type.GetTypeFromCLSID(new Guid("22E885D7-FB0B-49E3-B905-CCA6BD526B52")));
+          QBSessionManager instance = (QBSessionManager) Activator.CreateInstance(Type.GetTypeFromCLSID(new Guid("22E8D7-49E3-B905")));
           // ISSUE: reference to a compiler-generated method
           instance.OpenConnection("", "TLS2");
           // ISSUE: reference to a compiler-generated method
-          instance.BeginSession("G:\\Quickbooks\\GappData\\GappExpressV2\\GAPP Express Inc. 2015.qbw", ENOpenMode.omDontCare);
+          instance.BeginSession("G:\\Quickbooks\\2015.qbw", ENOpenMode.omDontCare);
           Thread.Sleep(5000);
           Console.WriteLine("QuickBooks file opened.");
           Thread.Sleep(5000);
